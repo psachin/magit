@@ -4587,8 +4587,7 @@ This means that the eventual commit does 'git commit --allow-empty'."
 		(insert (format "%s" (with-temp-buffer
 				       (insert-file-contents commit-template)
 				       (buffer-string)))))))
-      (goto-char (point-min))
-      (end-of-line))
+      (goto-char (point-min)))
     (message "Type C-c C-c to %s (C-c C-k to cancel)." operation)))
 
 (defun magit-log-edit (&optional arg)
